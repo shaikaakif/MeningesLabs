@@ -9,7 +9,16 @@ import FluxLines from "./flux-lines";
 export default function PageContent({ slug }: { slug: string }) {
   const page = pages[slug];
   if (!page) return null;
+  const route = routes.find((item) => item.slug === slug);
+  const url = `https://meningeslabs.com${slug ? `/${slug}` : "/"}`;
+  const pageName = (route?.title ?? "MENINGES LABS").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+  const isService = ["digital-engineering", "search-intelligence", "performance-marketing", "ai-automation", "growth-intelligence"].includes(slug);
+  const schema = [
+    { "@context": "https://schema.org", "@type": isService ? "Service" : "WebPage", "@id": `${url}#page`, url, name: pageName, description: route?.description, isPartOf: { "@id": "https://meningeslabs.com/#website" }, ...(isService ? { provider: { "@id": "https://meningeslabs.com/#organization" }, serviceType: pageName } : {}) },
+    { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://meningeslabs.com/" }, ...(slug ? [{ "@type": "ListItem", position: 2, name: pageName, item: url }] : [])] },
+  ];
   return <main id="main">
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     {slug === "" ? <section className="home-hero">
       <FluxLines className="home-flux" colors={["#780000", "#C1121F", "#669BBC"]} speed={0.35} scale={1.6} turbulence={1} fluidity={0.1} rimWidth={0.2} sharpness={2.5} shimmer={0.8} glow={0.8} lineWidth={1} flowDirection="down" mouseInteraction mouseStrength={0.7} mouseRadius={0.35} mouseDampening={0.15} clickSwirl intro lightMode transparent opacity={0.76} />
       <div className="home-copy"><p className="eyebrow reveal">Digital Growth & Intelligence</p><h1 className="display reveal delay" dangerouslySetInnerHTML={{ __html: page.title }} /><p className="intro reveal delay">{page.intro}</p><Link href="/services" className="arrow-link">Explore capabilities <span>↗</span></Link><span className="home-index">01 / 12&nbsp;&nbsp;—&nbsp;&nbsp;The Architecture of Autopilot</span></div>
