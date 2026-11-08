@@ -32,7 +32,7 @@ export default function PageContent({ slug }: { slug: string }) {
     {slug === "contact" && <section className="contact-options"><div><p className="eyebrow">Direct lines</p><h2 className="display">Choose how<br/>to reach us.</h2><p className="section-copy">No forms. Pick the channel that works for you.</p></div><div className="contact-actions">
       <a className="contact-action contact-whatsapp" href={contactDetails.whatsapp} target="_blank" rel="noreferrer"><span><b>WhatsApp</b><small>Message ready to send</small></span><i aria-hidden="true">↗</i></a>
       <a className="contact-action" href={contactDetails.tel}><span><b>Call now</b><small>{contactDetails.phone}</small></span><i aria-hidden="true">↗</i></a>
-      <a className="contact-action" href={contactDetails.email}><span><b>Email</b><small>meningeslabs@gmail.com</small></span><i aria-hidden="true">↗</i></a>
+      <a className="contact-action" href={contactDetails.email}><span><b>Email</b><small>info@meningeslabs.com</small></span><i aria-hidden="true">↗</i></a>
       {socialLinks.map((social) => <a className="contact-action" href={social.href} key={social.label} target="_blank" rel="noreferrer"><span><b>{social.label}</b><small>Follow along</small></span><i aria-hidden="true">↗</i></a>)}
     </div></section>}
     {slug && <ServiceDiagram slug={slug} />}

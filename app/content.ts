@@ -20,7 +20,7 @@ export const contactDetails = {
   phone: "+91 7671979762",
   tel: "tel:+917671979762",
   whatsapp: `https://wa.me/917671979762?text=${encodeURIComponent("Hello MENINGES LABS! I'm interested in your AI, digital growth, lead generation, and automation services. Let's discuss my requirements.")}`,
-  email: "mailto:meningeslabs@gmail.com",
+  email: "mailto:info@meningeslabs.com",
 };
 
 export type Card = { number?: string; title: string; body: string; href?: string };
