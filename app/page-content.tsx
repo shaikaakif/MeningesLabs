@@ -20,6 +20,12 @@ export default function PageContent({ slug }: { slug: string }) {
       <div className="hero-meta"><span>{page.label}</span><span className="hero-index">{String(routes.findIndex((route) => route.slug === slug) + 1).padStart(2, "0")} / 12</span></div>
       {page.statusItems && <div className="coming-soon-tags">{page.statusItems.map((item) => <span key={item}>{item} <b>Coming Soon</b></span>)}</div>}
     </section>}
+    {slug === "contact" && <section className="contact-options"><div><p className="eyebrow">Direct lines</p><h2 className="display">Choose how<br/>to reach us.</h2><p className="section-copy">No forms. Pick the channel that works for you.</p></div><div className="contact-actions">
+      <a className="contact-action contact-whatsapp" href={contactDetails.whatsapp} target="_blank" rel="noreferrer"><span><b>WhatsApp</b><small>Message ready to send</small></span><i aria-hidden="true">↗</i></a>
+      <a className="contact-action" href={contactDetails.tel}><span><b>Call now</b><small>{contactDetails.phone}</small></span><i aria-hidden="true">↗</i></a>
+      <a className="contact-action" href={contactDetails.email}><span><b>Email</b><small>meningeslabs@gmail.com</small></span><i aria-hidden="true">↗</i></a>
+      {socialLinks.map((social) => <a className="contact-action" href={social.href} key={social.label} target="_blank" rel="noreferrer"><span><b>{social.label}</b><small>Follow along</small></span><i aria-hidden="true">↗</i></a>)}
+    </div></section>}
     {slug && <ServiceDiagram slug={slug} />}
     {page.sections.map((section, index) => <section className={`content-section ${index % 2 ? "surface" : ""}`} key={section.title}>
       <div className="section-inner"><p className="eyebrow">{section.eyebrow}</p><div><h2 className="display section-title">{section.title}</h2><p className="section-copy">{section.body}</p></div></div>
@@ -29,7 +35,6 @@ export default function PageContent({ slug }: { slug: string }) {
     {!!page.cards?.length && <section className="content-section service-list"><div className="section-inner"><p className="eyebrow">{slug === "" ? "Connected practice" : "In scope"}</p><div><h2 className="display section-title">{slug === "" ? "Build a system that fits." : "Areas of work"}</h2><p className="section-copy">Start with the need. Define the work. Connect the pieces that belong together.</p></div></div><div className="card-grid">{page.cards.map((card, i) => <article className="service-card" key={card.title}><span>{card.number ?? String(i + 1).padStart(2, "0")}</span><h3 className="display">{card.title}</h3><p>{card.body}</p>{card.href && <Link className="arrow-link" href={card.href}>Explore <span>↗</span></Link>}</article>)}</div></section>}
     {page.faqGroups && <FAQSection groups={page.faqGroups} limit={slug === "contact" ? 6 : undefined} id={slug === "services" ? "faq" : undefined} />}
     {page.quote && <section className="statement"><blockquote>{page.quote}</blockquote><span>{page.quoteBy}</span></section>}
-    {slug === "contact" && <section className="contact-options"><div><p className="eyebrow">Direct lines</p><h2 className="display">Choose how<br/>to reach us.</h2></div><div><a href={contactDetails.whatsapp} target="_blank" rel="noreferrer">WhatsApp <span>↗</span></a><a href={contactDetails.tel}>{contactDetails.phone} <span>↗</span></a><a href={contactDetails.email}>meningeslabs@gmail.com <span>↗</span></a>{socialLinks.map((social) => <a href={social.href} key={social.label} target="_blank" rel="noreferrer">{social.label} <span>↗</span></a>)}</div></section>}
     {slug !== "contact" && slug !== "" && <section className="next-step"><div><p className="eyebrow">A useful next step</p><h2 className="display">Talk through<br/>the actual need.</h2><Link className="arrow-link" href="/contact">Contact Meninges Labs <span>↗</span></Link></div></section>}
     {slug === "" && <section className="home-contact"><p className="eyebrow">When you’re ready</p><h2 className="display">Let’s make the pieces<br/>work <em>together.</em></h2><Link href="/contact" className="contact-cta">Start a conversation <span>↗</span></Link></section>}
   </main>;

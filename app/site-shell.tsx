@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
-import { contactDetails, routes, socialLinks } from "./content";
+import { routes } from "./content";
 
 export default function SiteShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -31,7 +31,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
     <header className="site-header">
       <Link className="brand" href="/" aria-label="MENINGES LABS home"><img src="/brand/meninges-labs-primary.webp" alt="MENINGES LABS" width="800" height="300" /></Link>
       <nav className="header-links" aria-label="Featured pages">{["services", "industries", "about", "contact"].map((slug) => <Link href={linkFor(slug)} key={slug}>{routes.find((route) => route.slug === slug)?.nav}</Link>)}</nav>
-      <button ref={trigger} className="gear-button" aria-label={open ? "Close site navigation" : "Open site navigation"} aria-expanded={open} aria-controls="site-navigation" onClick={() => setOpen(!open)}><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1 1.4 1.1-1.4 2.4-1.7-.6a7.7 7.7 0 0 1-1.7 1l-.3 1.8h-2.8l-.3-1.8a7.7 7.7 0 0 1-1.7-1l-1.7.6-1.4-2.4L7.3 15a7.6 7.6 0 0 1 0-2l-1.4-1.1 1.4-2.4 1.7.6a7.7 7.7 0 0 1 1.7-1l.3-1.8h2.8l.3 1.8a7.7 7.7 0 0 1 1.7 1l1.7-.6 1.4 2.4-1.4 1.1a7.6 7.6 0 0 1-.1 2Z"/></svg></button>
+      <div className="header-actions"><Link className="header-connect" href="/contact">Connect <span aria-hidden="true">↗</span></Link><button ref={trigger} className="gear-button" aria-label={open ? "Close site navigation" : "Open site navigation"} aria-expanded={open} aria-controls="site-navigation" onClick={() => setOpen(!open)}><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1 1.4 1.1-1.4 2.4-1.7-.6a7.7 7.7 0 0 1-1.7 1l-.3 1.8h-2.8l-.3-1.8a7.7 7.7 0 0 1-1.7-1l-1.7.6-1.4-2.4L7.3 15a7.6 7.6 0 0 1 0-2l-1.4-1.1 1.4-2.4 1.7.6a7.7 7.7 0 0 1 1.7-1l.3-1.8h2.8l.3 1.8a7.7 7.7 0 0 1 1.7 1l1.7-.6 1.4 2.4-1.4 1.1a7.6 7.6 0 0 1-.1 2Z"/></svg></button></div>
     </header>
     <AnimatePresence>
       {open && <motion.div id="site-navigation" role="dialog" aria-modal="true" aria-label="All pages" className="navigation-overlay" initial={{ opacity: 0, y: reduced ? 0 : -14 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: reduced ? 0 : -8 }} transition={{ type: "spring", stiffness: 170, damping: 23 }} onKeyDown={(event) => {
@@ -48,7 +48,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
       <div className="footer-main"><div><img className="footer-logo" src="/brand/meninges-labs-descriptor.webp" alt="MENINGES LABS — Digital Growth & Intelligence" width="800" height="300"/><p>Connected growth infrastructure,<br/>engineered around your business.</p></div>
         <div className="footer-pages"><span className="eyebrow">Explore</span>{footerPages.map((slug) => <Link key={slug || "home"} href={linkFor(slug)}>{routes.find((route) => route.slug === slug)?.nav}{["work", "insights"].includes(slug) && <small>Coming Soon</small>}</Link>)}<Link href="/services#faq">FAQs</Link></div>
         <div className="footer-pages"><span className="eyebrow">Capabilities</span>{capabilities.map((slug) => <Link key={slug} href={linkFor(slug)}>{routes.find((route) => route.slug === slug)?.nav}</Link>)}</div>
-        <div className="footer-contact"><span className="eyebrow">Connect</span><a href={contactDetails.whatsapp} target="_blank" rel="noreferrer">WhatsApp</a><a href={contactDetails.tel}>{contactDetails.phone}</a><a href={contactDetails.email}>meningeslabs@gmail.com</a>{socialLinks.map((social) => <a key={social.label} href={social.href} target="_blank" rel="noreferrer">{social.label} ↗</a>)}</div>
+        <div className="footer-contact"><span className="eyebrow">Connect</span><Link href="/contact">WhatsApp · Phone · Email · Instagram <span aria-hidden="true">↗</span></Link></div>
       </div>
       <div className="footer-bottom"><span>© {new Date().getFullYear()} MENINGES LABS</span><span>THE ARCHITECTURE OF AUTOPILOT.</span><a href="#main">Back to top ↑</a></div>
     </footer>
