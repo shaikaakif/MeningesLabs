@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: {
     title: "MENINGES LABS | AI-Powered Digital & Intelligence Agency",
-    description: "Digital products, lead generation, and end-to-end automation—connected around your business.",
+    description: "Meninges Labs is an AI-powered digital and intelligence agency building digital products, lead generation systems, and end-to-end automation.",
     url: "https://meningeslabs.com/",
-    images: [{ url: "/images/meninges-labs-ai-powered-digital-intelligence-agency-og.png", width: 1200, height: 630, alt: "MENINGES LABS — AI-powered digital and intelligence agency" }],
+    images: [{ url: "/images/meninges-labs-ai-agency-social-preview.png", width: 1200, height: 630, alt: "MENINGES LABS — AI-powered digital and intelligence agency, digital products, lead generation, and end-to-end automation" }],
   },
-  twitter: { card: "summary_large_image", title: "MENINGES LABS | AI-Powered Digital & Intelligence Agency", description: "Digital products, lead generation, and end-to-end automation.", images: ["/images/meninges-labs-ai-powered-digital-intelligence-agency-og.png"] },
+  twitter: { card: "summary_large_image", title: "MENINGES LABS | AI-Powered Digital & Intelligence Agency", description: "Meninges Labs is an AI-powered digital and intelligence agency building digital products, lead generation systems, and end-to-end automation.", images: ["/images/meninges-labs-ai-agency-social-preview.png"] },
 };
 
 export default function HomePage() {

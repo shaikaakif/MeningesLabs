@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const route = routes.find((item) => item.slug === slug);
   if (!route) return {};
   const canonical = `/${slug}`;
-  const shareImage = "/images/meninges-labs-ai-powered-digital-intelligence-agency-og.png";
+  const shareImage = "/images/meninges-labs-ai-agency-social-preview.png";
   const title = `${route.title} — MENINGES LABS`;
   const comingSoon = slug === "work" || slug === "insights";
   return {
