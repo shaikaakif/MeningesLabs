@@ -3,8 +3,10 @@ import { notFound } from "next/navigation";
 import { pages, routes } from "../content";
 import PageContent from "../page-content";
 
+const customRoutes = ["about", "founder", "brand-assets"];
+
 export function generateStaticParams() {
-  return routes.filter((route) => route.slug).map(({ slug }) => ({ slug }));
+  return routes.filter((route) => route.slug && !customRoutes.includes(route.slug)).map(({ slug }) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {

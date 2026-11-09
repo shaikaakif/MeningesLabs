@@ -21,12 +21,12 @@ export default function PageContent({ slug }: { slug: string }) {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     {slug === "" ? <section className="home-hero">
       <FluxLines className="home-flux" colors={["#780000", "#C1121F", "#669BBC"]} speed={0.35} scale={1.6} turbulence={1} fluidity={0.1} rimWidth={0.2} sharpness={2.5} shimmer={0.8} glow={0.8} lineWidth={1} flowDirection="down" mouseInteraction mouseStrength={0.7} mouseRadius={0.35} mouseDampening={0.15} clickSwirl intro lightMode transparent opacity={0.76} />
-      <div className="home-copy"><p className="eyebrow reveal">Digital Growth & Intelligence</p><h1 className="display reveal delay" dangerouslySetInnerHTML={{ __html: page.title }} /><p className="intro reveal delay">{page.intro}</p><Link href="/services" className="arrow-link">Explore capabilities <span>↗</span></Link><span className="home-index">01 / 12&nbsp;&nbsp;—&nbsp;&nbsp;The Architecture of Autopilot</span></div>
+      <div className="home-copy"><p className="eyebrow reveal">Digital Growth & Intelligence</p><h1 className="display reveal delay" dangerouslySetInnerHTML={{ __html: page.title }} /><p className="intro reveal delay">{page.intro}</p><Link href="/services" className="arrow-link">Explore capabilities <span>↗</span></Link><span className="home-index">01 / {routes.length}&nbsp;&nbsp;—&nbsp;&nbsp;The Architecture of Autopilot</span></div>
       <HeroReel />
       <p className="home-rail">Build <i/> Acquire <i/> Convert <i/> Automate <i/> Optimise</p>
     </section> : <section className="page-hero">
       <p className="eyebrow reveal">{page.eyebrow}</p><h1 className="display reveal delay" dangerouslySetInnerHTML={{ __html: page.title }} /><p className="intro reveal delay">{page.intro}</p>
-      <div className="hero-meta"><span>{page.label}</span><span className="hero-index">{String(routes.findIndex((route) => route.slug === slug) + 1).padStart(2, "0")} / 12</span></div>
+      <div className="hero-meta"><span>{page.label}</span><span className="hero-index">{String(routes.findIndex((route) => route.slug === slug) + 1).padStart(2, "0")} / {routes.length}</span></div>
       {page.statusItems && <div className="coming-soon-tags">{page.statusItems.map((item) => <span key={item}>{item} <b>Coming Soon</b></span>)}</div>}
     </section>}
     {slug === "contact" && <section className="contact-options"><div><p className="eyebrow">Direct lines</p><h2 className="display">Choose how<br/>to reach us.</h2><p className="section-copy">No forms. Pick the channel that works for you.</p></div><div className="contact-actions">

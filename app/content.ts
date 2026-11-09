@@ -11,8 +11,10 @@ export const routes: Route[] = [
   { slug: "industries", title: "Industries", nav: "Industries", description: "Digital growth systems shaped around different business contexts." },
   { slug: "work", title: "Work", nav: "Work", description: "Work, projects, case studies, testimonials and client results are coming soon." },
   { slug: "about", title: "About Meninges Labs", nav: "About", description: "Meninges Labs is an AI-powered digital and intelligence agency connecting digital products, lead generation, and end-to-end automation." },
+  { slug: "founder", title: "Founder's Desk", nav: "Founder", description: "Meet Aakif, founder and AI product developer at MENINGES LABS, and read his note on building practical digital systems." },
   { slug: "insights", title: "Insights", nav: "Insights", description: "MENINGES LABS insights and articles are coming soon." },
   { slug: "contact", title: "Contact", nav: "Contact", description: "Talk to Meninges Labs about your digital growth requirements." },
+  { slug: "brand-assets", title: "Brand Assets", nav: "Brand Assets", description: "Official MENINGES LABS logos, ML monogram, application icon, favicon and social preview, with downloadable files." },
 ];
 
 export const socialLinks: { label: string; href: string }[] = [{ label: "Instagram", href: "https://www.instagram.com/meningeslabs/" }];
@@ -46,6 +48,8 @@ export type FAQGroup = { name: string; items: FAQ[] };
 export const faqGroups: FAQGroup[] = [
   { name: "About Meninges Labs", items: [
     { question: "What does Meninges Labs do?", answer: "Meninges Labs helps businesses connect digital engineering, search visibility, paid acquisition, AI automation and growth consulting into systems shaped around their needs." },
+    { question: "Is MENINGES LABS connected to the medical term “meninges”?", answer: "No. MENINGES LABS is a digital growth, engineering and intelligence agency. The name is a brand identity and is not affiliated with anatomy, medicine, healthcare research or the membranes surrounding the brain and spinal cord. Search results about the anatomical meninges refer to a different subject." },
+    { question: "Who founded MENINGES LABS?", answer: "MENINGES LABS was founded by Aakif, who serves as Founder and AI Product Developer. His portfolio is available at shaikaakif.com." },
     { question: "What does “The Architecture of Autopilot” mean?", answer: "It describes the aim of connecting fragmented digital work into coordinated systems. It does not mean a business can operate without people or oversight." },
     { question: "Are you a website development agency?", answer: "Website development is one capability. We also work across search, paid media, automation and growth consulting when those services address the business need." },
     { question: "Who do you work with?", answer: "We are oriented toward established businesses with a product or service, a digital growth or operations need, and the capacity to act on additional demand." },

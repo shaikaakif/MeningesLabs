@@ -2,7 +2,7 @@ import PageContent from "./page-content";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI-Powered Digital & Intelligence Agency",
+  title: { absolute: "MENINGES LABS | AI-Powered Digital & Intelligence Agency" },
   description: "Meninges Labs is an AI-powered digital and intelligence agency building digital products, lead generation systems, and end-to-end automation.",
   alternates: { canonical: "/" },
   openGraph: {
