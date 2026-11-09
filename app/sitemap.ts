@@ -2,7 +2,6 @@ import type { MetadataRoute } from "next";
 import { routes } from "./content";
 
 const base = "https://meningeslabs.com";
-const excluded = ["work", "insights"];
 
 const imagesByPage: Record<string, string[]> = {
   "": [
@@ -23,17 +22,27 @@ const imagesByPage: Record<string, string[]> = {
     `${base}/brand-assets/photography/aakif-founder-meninges-labs-portrait.jpg`,
   ],
   contact: [`${base}/brand-assets/logos/meninges-labs-logo-with-descriptor-transparent.png`],
+  hyderabad: [
+    `${base}/images/meninges-labs-ai-agency-social-preview.png`,
+    `${base}/brand-assets/logos/meninges-labs-primary-logo-transparent.png`,
+  ],
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
+  const seen = new Set<string>();
   return routes
-    .filter(({ slug }) => !excluded.includes(slug))
-    .map(({ slug }) => ({
+    .filter(({ noindex }) => !noindex)
+    .map<MetadataRoute.Sitemap[number]>(({ slug }) => ({
       url: slug ? `${base}/${slug}` : `${base}/`,
       lastModified: now,
       changeFrequency: slug === "" ? "weekly" : "monthly",
-      priority: slug === "" ? 1 : slug === "about" || slug === "founder" || slug === "brand-assets" ? 0.8 : 0.7,
+      priority: slug === "" ? 1 : ["about", "founder", "brand-assets", "hyderabad"].includes(slug) ? 0.8 : 0.7,
       images: imagesByPage[slug],
-    }));
+    }))
+    .filter(({ url }) => {
+      if (seen.has(url)) return false;
+      seen.add(url);
+      return true;
+    });
 }

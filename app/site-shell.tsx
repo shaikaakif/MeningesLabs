@@ -13,7 +13,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
   const close = useRef<HTMLButtonElement>(null);
   const reduced = useReducedMotion();
   const activePath = pathname === "/" ? "" : pathname.replace(/^\//, "");
-  const footerPages = ["", "services", "industries", "work", "insights", "about", "founder", "contact"];
+  const footerPages = ["", "services", "hyderabad", "industries", "work", "insights", "about", "founder", "contact"];
   const capabilities = ["digital-engineering", "search-intelligence", "performance-marketing", "ai-automation", "growth-intelligence"];
 
   useEffect(() => { setOpen(false); }, [pathname]);

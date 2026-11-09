@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const pageUrl = "https://meningeslabs.com/brand-assets";
 const shareImage = "/images/meninges-labs-ai-agency-social-preview.png";
-const pageDescription = "Official MENINGES LABS brand assets: primary logo, descriptor lockup, ML monogram, application icon, favicon, social preview and founder portrait. Preview and download each file.";
+const pageDescription = "Official MENINGES LABS brand assets: primary logo, descriptor lockup, ML monogram, application icon, favicon, social preview and founder portrait.";
 
 export const metadata: Metadata = {
   title: { absolute: "Brand Assets — MENINGES LABS Logos, Monogram & App Icons" },

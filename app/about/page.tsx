@@ -4,7 +4,7 @@ import FAQSection from "../faq-section";
 
 const pageUrl = "https://meningeslabs.com/about";
 const shareImage = "/images/meninges-labs-ai-agency-social-preview.png";
-const pageDescription = "MENINGES LABS is a digital growth, engineering and intelligence agency — not a medical organisation. Learn who we are, the problems we solve, our approach, and how seven connected capabilities form practical digital systems.";
+const pageDescription = "MENINGES LABS is a digital growth, engineering and intelligence agency - not a medical organisation. Learn who we are, how we think and what we build.";
 
 export const metadata: Metadata = {
   title: { absolute: "About MENINGES LABS — Digital Growth, Engineering & Intelligence Agency" },
