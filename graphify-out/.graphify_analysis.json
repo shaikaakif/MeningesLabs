@@ -1,0 +1,375 @@
+{
+  "communities": {
+    "0": [
+      "app_globals",
+      "app_layout",
+      "app_layout_metadata",
+      "app_layout_rootlayout",
+      "app_layout_viewport",
+      "app_site_shell_siteshell",
+      "package",
+      "package_dependencies",
+      "package_dependencies_fontsource_allura",
+      "package_dependencies_fontsource_geist",
+      "package_dependencies_fontsource_geist_mono",
+      "package_dependencies_motion",
+      "package_dependencies_next",
+      "package_dependencies_react_dom",
+      "package_devdependencies",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_tailwindcss_postcss",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_typescript",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_start",
+      "ref_fontsource_allura",
+      "ref_fontsource_geist",
+      "ref_fontsource_geist_mono",
+      "ref_motion",
+      "ref_react_dom",
+      "ref_tailwindcss",
+      "ref_tailwindcss_postcss",
+      "ref_types_node",
+      "ref_types_react",
+      "ref_types_react_dom",
+      "ref_typescript"
+    ],
+    "1": [
+      "app_about_page",
+      "app_about_page_aboutpage",
+      "app_about_page_capabilities",
+      "app_about_page_metadata",
+      "app_about_page_problems",
+      "app_brand_assets_page",
+      "app_brand_assets_page_asset",
+      "app_brand_assets_page_assets",
+      "app_brand_assets_page_brandassetspage",
+      "app_brand_assets_page_metadata",
+      "app_brand_assets_page_rules",
+      "app_faq_section",
+      "app_faq_section_faqsection",
+      "app_founder_page",
+      "app_founder_page_focusareas",
+      "app_founder_page_founderpage",
+      "app_founder_page_foundervisual",
+      "app_founder_page_metadata",
+      "app_founder_page_notes",
+      "app_hyderabad_page",
+      "app_hyderabad_page_capabilities",
+      "app_hyderabad_page_hyderabadpage",
+      "app_hyderabad_page_metadata",
+      "app_hyderabad_page_steps",
+      "app_page_content",
+      "app_page_content_contactoptions",
+      "app_page_content_pagecontent",
+      "app_reveal",
+      "app_reveal_reveal",
+      "app_ui",
+      "app_ui_cardicons",
+      "app_ui_closingcta",
+      "app_ui_deliverables",
+      "app_ui_pagehero",
+      "app_ui_relatedlinks",
+      "app_ui_sectionhead",
+      "app_ui_statement"
+    ],
+    "2": [
+      "app_icons_icon",
+      "app_system_visuals",
+      "app_system_visuals_aboutvisual",
+      "app_system_visuals_automationmock",
+      "app_system_visuals_automationvisual",
+      "app_system_visuals_brandvisual",
+      "app_system_visuals_browsermock",
+      "app_system_visuals_campaignmock",
+      "app_system_visuals_campaignvisual",
+      "app_system_visuals_capabilities",
+      "app_system_visuals_capabilitybento",
+      "app_system_visuals_capabilitymap",
+      "app_system_visuals_contactvisual",
+      "app_system_visuals_engineeringvisual",
+      "app_system_visuals_growthmock",
+      "app_system_visuals_growthvisual",
+      "app_system_visuals_herosystem",
+      "app_system_visuals_hyderabadvisual",
+      "app_system_visuals_industriesvisual",
+      "app_system_visuals_insightsvisual",
+      "app_system_visuals_pagevisual",
+      "app_system_visuals_searchmock",
+      "app_system_visuals_searchvisual",
+      "app_system_visuals_workvisual"
+    ],
+    "3": [
+      "app_content",
+      "app_content_card",
+      "app_content_contactdetails",
+      "app_content_faq",
+      "app_content_faqgroup",
+      "app_content_faqgroups",
+      "app_content_page",
+      "app_content_pages",
+      "app_content_route",
+      "app_content_routes",
+      "app_content_sociallinks",
+      "app_page_content_pagemetadata",
+      "app_site_shell",
+      "app_site_shell_groups",
+      "app_site_shell_primarynav",
+      "app_sitemap",
+      "app_sitemap_imagesbypage",
+      "app_sitemap_sitemap",
+      "app_slug_page",
+      "app_slug_page_customroutes",
+      "app_slug_page_generatemetadata",
+      "app_slug_page_generatestaticparams",
+      "app_slug_page_routepage"
+    ],
+    "4": [
+      "app_brand_film",
+      "app_brand_film_brandfilm",
+      "app_brand_film_formattime",
+      "app_home_page",
+      "app_home_page_homepage",
+      "app_home_page_principles",
+      "app_home_page_work",
+      "app_icons",
+      "app_icons_iconname",
+      "app_icons_paths",
+      "app_page",
+      "app_page_metadata",
+      "app_page_page",
+      "app_process_rail",
+      "app_process_rail_processrail",
+      "app_process_rail_steps",
+      "app_transformation",
+      "app_transformation_nodes",
+      "app_transformation_transformation",
+      "package_dependencies_react",
+      "ref_react"
+    ],
+    "5": [
+      "ref_node_fs",
+      "ref_node_path",
+      "ref_sharp",
+      "scripts_generate_brand_assets",
+      "scripts_generate_brand_assets_colors",
+      "scripts_generate_brand_assets_ensure",
+      "scripts_generate_brand_assets_extractartwork",
+      "scripts_generate_brand_assets_icoheader",
+      "scripts_generate_brand_assets_logosrc",
+      "scripts_generate_brand_assets_main",
+      "scripts_generate_brand_assets_monogramsrc",
+      "scripts_generate_brand_assets_out",
+      "scripts_generate_brand_assets_root",
+      "scripts_generate_brand_assets_roundedicon",
+      "scripts_generate_brand_assets_roundedmask",
+      "scripts_generate_brand_assets_save",
+      "scripts_generate_brand_assets_socialpreview",
+      "scripts_generate_brand_assets_sourcedir",
+      "scripts_generate_brand_assets_taglinesrc",
+      "scripts_generate_brand_assets_writeico"
+    ],
+    "6": [
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowjs",
+      "tsconfig_compileroptions_esmoduleinterop",
+      "tsconfig_compileroptions_incremental",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_compileroptions_plugins",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target",
+      "tsconfig_exclude",
+      "tsconfig_include"
+    ],
+    "7": [
+      "app_layers_explorer",
+      "app_layers_explorer_layers",
+      "app_layers_explorer_layersexplorer",
+      "app_layers_explorer_scope",
+      "app_manifest",
+      "app_manifest_manifest",
+      "app_robots",
+      "app_robots_robots",
+      "next_config",
+      "next_config_nextconfig",
+      "ref_next"
+    ],
+    "8": [
+      "next_env_d",
+      "next_env_d_rationale_6",
+      "next_types_root_params_d",
+      "next_types_routes_d"
+    ],
+    "9": [
+      "postcss_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.07254623044096728,
+    "1": 0.15315315315315314,
+    "2": 0.2028985507246377,
+    "3": 0.11462450592885376,
+    "4": 0.16666666666666666,
+    "5": 0.1631578947368421,
+    "6": 0.10526315789473684,
+    "7": 0.18181818181818182,
+    "8": 0.5,
+    "9": 1.0
+  },
+  "gods": [
+    {
+      "id": "app_icons_icon",
+      "label": "Icon()",
+      "degree": 44
+    },
+    {
+      "id": "app_system_visuals_pagevisual",
+      "label": "PageVisual()",
+      "degree": 21
+    },
+    {
+      "id": "ref_next",
+      "label": "next",
+      "degree": 19
+    },
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "app_ui_sectionhead",
+      "label": "SectionHead()",
+      "degree": 15
+    },
+    {
+      "id": "app_page_content_pagecontent",
+      "label": "PageContent()",
+      "degree": 14
+    },
+    {
+      "id": "app_ui_closingcta",
+      "label": "ClosingCTA()",
+      "degree": 14
+    },
+    {
+      "id": "app_home_page_homepage",
+      "label": "HomePage()",
+      "degree": 13
+    },
+    {
+      "id": "app_faq_section_faqsection",
+      "label": "FAQSection()",
+      "degree": 12
+    },
+    {
+      "id": "app_reveal_reveal",
+      "label": "Reveal()",
+      "degree": 11
+    }
+  ],
+  "surprises": [
+    {
+      "source": "RoutePage()",
+      "target": "PageContent()",
+      "source_files": [
+        "app/[slug]/page.tsx",
+        "app/page-content.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities; peripheral node `RoutePage()` unexpectedly reaches hub `PageContent()`"
+    },
+    {
+      "source": "SiteShell()",
+      "target": "Icon()",
+      "source_files": [
+        "app/site-shell.tsx",
+        "app/icons.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "AboutPage()",
+      "target": "Icon()",
+      "source_files": [
+        "app/about/page.tsx",
+        "app/icons.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "AboutPage()",
+      "target": "PageVisual()",
+      "source_files": [
+        "app/about/page.tsx",
+        "app/system-visuals.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "BrandAssetsPage()",
+      "target": "Icon()",
+      "source_files": [
+        "app/brand-assets/page.tsx",
+        "app/icons.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `next` connect `Community 7` to `Community 0`, `Community 1`, `Community 2`, `Community 3`, `Community 4`?",
+      "why": "High betweenness centrality (0.225) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.07254623044096728 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Icon()` connect `Community 2` to `Community 0`, `Community 1`, `Community 3`, `Community 4`, `Community 7`?",
+      "why": "High betweenness centrality (0.099) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 3` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.11462450592885376 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `react` connect `Community 4` to `Community 0`, `Community 1`, `Community 3`, `Community 7`?",
+      "why": "High betweenness centrality (0.034) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 6` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

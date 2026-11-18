@@ -1,0 +1,512 @@
+{
+  "app/[slug]/page.tsx": {
+    "mtime": 1794575523.10152,
+    "seen": 1794984963.882346,
+    "ast_hash": "95accc3286b8cf69f376c000c9375511",
+    "semantic_hash": "95accc3286b8cf69f376c000c9375511"
+  },
+  "app/about/page.tsx": {
+    "mtime": 1794574942.184927,
+    "seen": 1794984963.882346,
+    "ast_hash": "2ca7f86bfb0aa2340e77aed48f565dd5",
+    "semantic_hash": "2ca7f86bfb0aa2340e77aed48f565dd5"
+  },
+  "app/brand-assets/page.tsx": {
+    "mtime": 1794986426.920256,
+    "seen": 1794986642.0170996,
+    "ast_hash": "bf3868bc24fcc97910cc08635e040ba6",
+    "semantic_hash": ""
+  },
+  "app/brand-film.tsx": {
+    "mtime": 1794986260.3662612,
+    "seen": 1794986642.0170996,
+    "ast_hash": "4551cb188662c883dbad78275fc95623",
+    "semantic_hash": ""
+  },
+  "app/content.ts": {
+    "mtime": 1794576481.9135554,
+    "seen": 1794984963.882346,
+    "ast_hash": "ce3885fea45ee508d1aa708105a03486",
+    "semantic_hash": "ce3885fea45ee508d1aa708105a03486"
+  },
+  "app/faq-section.tsx": {
+    "mtime": 1794574865.3893104,
+    "seen": 1794984963.882346,
+    "ast_hash": "fe85a730b3f3ba08b9263e0e0143b789",
+    "semantic_hash": "fe85a730b3f3ba08b9263e0e0143b789"
+  },
+  "app/founder/page.tsx": {
+    "mtime": 1794576045.8404229,
+    "seen": 1794984963.882346,
+    "ast_hash": "f034cbe814eddf8d8c72cbe971598472",
+    "semantic_hash": "f034cbe814eddf8d8c72cbe971598472"
+  },
+  "app/home-page.tsx": {
+    "mtime": 1794985232.5763738,
+    "seen": 1794986642.0170996,
+    "ast_hash": "1cf394975730dd4f5dfcd652653cd89a",
+    "semantic_hash": ""
+  },
+  "app/hyderabad/page.tsx": {
+    "mtime": 1794575135.958127,
+    "seen": 1794984963.882346,
+    "ast_hash": "495e51ddf4c767d0809b686ac0c294c4",
+    "semantic_hash": "495e51ddf4c767d0809b686ac0c294c4"
+  },
+  "app/icons.tsx": {
+    "mtime": 1794574738.3375125,
+    "seen": 1794984963.882346,
+    "ast_hash": "7f9fb1460206d11a8b9a907eeb528675",
+    "semantic_hash": "7f9fb1460206d11a8b9a907eeb528675"
+  },
+  "app/layers-explorer.tsx": {
+    "mtime": 1794574922.27782,
+    "seen": 1794984963.882346,
+    "ast_hash": "d27ac862e6e7f10ba708238b11c990c5",
+    "semantic_hash": "d27ac862e6e7f10ba708238b11c990c5"
+  },
+  "app/layout.tsx": {
+    "mtime": 1794985615.3454182,
+    "seen": 1794986642.0170996,
+    "ast_hash": "39160167bef755ee2d8625520ef638af",
+    "semantic_hash": ""
+  },
+  "app/manifest.ts": {
+    "mtime": 1794985615.2733884,
+    "seen": 1794986642.0170996,
+    "ast_hash": "a7a3789eb6098da50c9e1a237248f49e",
+    "semantic_hash": ""
+  },
+  "app/page-content.tsx": {
+    "mtime": 1794985701.0053122,
+    "seen": 1794986642.0170996,
+    "ast_hash": "40c42acaa56edabd3508576cb52214ef",
+    "semantic_hash": ""
+  },
+  "app/page.tsx": {
+    "mtime": 1794575515.789426,
+    "seen": 1794984963.882346,
+    "ast_hash": "ca6c75eb8e07323bc9fe22e6c09859d1",
+    "semantic_hash": "ca6c75eb8e07323bc9fe22e6c09859d1"
+  },
+  "app/process-rail.tsx": {
+    "mtime": 1794574820.700676,
+    "seen": 1794984963.882346,
+    "ast_hash": "e96421b29685191d2163628e011c109b",
+    "semantic_hash": "e96421b29685191d2163628e011c109b"
+  },
+  "app/reveal.tsx": {
+    "mtime": 1794576640.009484,
+    "seen": 1794984963.882346,
+    "ast_hash": "2f4625b86a08480ce4521a69ef4dfb78",
+    "semantic_hash": "2f4625b86a08480ce4521a69ef4dfb78"
+  },
+  "app/robots.ts": {
+    "mtime": 1794204195.8104405,
+    "seen": 1794984963.882346,
+    "ast_hash": "8835dafc08abf7bf1c05d3bbab32d87b",
+    "semantic_hash": "8835dafc08abf7bf1c05d3bbab32d87b"
+  },
+  "app/site-shell.tsx": {
+    "mtime": 1794986893.9678962,
+    "seen": 1794987036.6714544,
+    "ast_hash": "1b7a99429f671b742cafbae6487d650d",
+    "semantic_hash": ""
+  },
+  "app/sitemap.ts": {
+    "mtime": 1794579098.4112487,
+    "seen": 1794984963.882346,
+    "ast_hash": "0b02deb72066e96162f06bbda5bd8b82",
+    "semantic_hash": "0b02deb72066e96162f06bbda5bd8b82"
+  },
+  "app/system-visuals.tsx": {
+    "mtime": 1794575672.3470068,
+    "seen": 1794984963.882346,
+    "ast_hash": "601d3eab1a26fe78952efb81211abd1f",
+    "semantic_hash": "601d3eab1a26fe78952efb81211abd1f"
+  },
+  "app/transformation.tsx": {
+    "mtime": 1794575672.321341,
+    "seen": 1794984963.8833556,
+    "ast_hash": "274eb3aba349182ba03f8f30a037cd25",
+    "semantic_hash": "274eb3aba349182ba03f8f30a037cd25"
+  },
+  "app/ui.tsx": {
+    "mtime": 1794576471.3628402,
+    "seen": 1794984963.8833556,
+    "ast_hash": "44f5726757a3c2e06e45becfcf403fed",
+    "semantic_hash": "44f5726757a3c2e06e45becfcf403fed"
+  },
+  "next-env.d.ts": {
+    "mtime": 1794985731.281731,
+    "seen": 1794986642.0170996,
+    "ast_hash": "0e4a65e8b2b9aa3ed0f8957b9406bd41",
+    "semantic_hash": "0e4a65e8b2b9aa3ed0f8957b9406bd41"
+  },
+  "next.config.ts": {
+    "mtime": 1794121449.216392,
+    "seen": 1794984963.8833556,
+    "ast_hash": "78f65c4335715ba222555bfd4b763ed9",
+    "semantic_hash": "78f65c4335715ba222555bfd4b763ed9"
+  },
+  "package.json": {
+    "mtime": 1794575647.3765488,
+    "seen": 1794984963.8833556,
+    "ast_hash": "242ee14c116acf05a8192950fd72fd56",
+    "semantic_hash": "242ee14c116acf05a8192950fd72fd56"
+  },
+  "postcss.config.mjs": {
+    "mtime": 1794113389.8212,
+    "seen": 1794984963.8833556,
+    "ast_hash": "a3bf892c01460aadc8e23071da85ae27",
+    "semantic_hash": "a3bf892c01460aadc8e23071da85ae27"
+  },
+  "scripts/generate-brand-assets.mjs": {
+    "mtime": 1794574660.74116,
+    "seen": 1794984963.8833556,
+    "ast_hash": "54288835fda1465935c7a97f6747a813",
+    "semantic_hash": "54288835fda1465935c7a97f6747a813"
+  },
+  "tsconfig.json": {
+    "mtime": 1794113817.073001,
+    "seen": 1794984963.8833556,
+    "ast_hash": "40944bf139c424f6ccc5770603dc690a",
+    "semantic_hash": "40944bf139c424f6ccc5770603dc690a"
+  },
+  "archive/brand-v1/video/meninges_labs_ad.mp4": {
+    "mtime": 1794115442.0751991,
+    "seen": 1794984963.8833556,
+    "ast_hash": "bf3816007ffc1c3a8ab376c5303b88de",
+    "semantic_hash": "bf3816007ffc1c3a8ab376c5303b88de"
+  },
+  "meninges_labs_ad_v2.mp4": {
+    "mtime": 1794573851.735088,
+    "seen": 1794984963.8833556,
+    "ast_hash": "d8b0303259d3fe1838bb2e155d16d0d9",
+    "semantic_hash": "d8b0303259d3fe1838bb2e155d16d0d9"
+  },
+  "public/videos/meninges-labs-brand-film.mp4": {
+    "mtime": 1794573851.735088,
+    "seen": 1794984963.8833556,
+    "ast_hash": "d8b0303259d3fe1838bb2e155d16d0d9",
+    "semantic_hash": "d8b0303259d3fe1838bb2e155d16d0d9"
+  },
+  "app/capability-explorer.tsx": {
+    "mtime": 1794986000.2646492,
+    "seen": 1794986642.0170996,
+    "ast_hash": "df094c561670802d9d84cf3c438eab15",
+    "semantic_hash": ""
+  },
+  "app/connect-system.tsx": {
+    "mtime": 1794985607.8073344,
+    "seen": 1794986642.0170996,
+    "ast_hash": "83db863ef0b0a4f9a2c65188fa949a4a",
+    "semantic_hash": ""
+  },
+  "app/contact-brief.tsx": {
+    "mtime": 1794985705.2136667,
+    "seen": 1794986642.0170996,
+    "ast_hash": "2d78baf7611a10dfbd45859958e9e604",
+    "semantic_hash": ""
+  },
+  "app/contact-cta.tsx": {
+    "mtime": 1794985219.2425058,
+    "seen": 1794986642.0170996,
+    "ast_hash": "296d91f5c2cf4236db7a243d03408814",
+    "semantic_hash": ""
+  },
+  "app/not-found.tsx": {
+    "mtime": 1794985795.9894888,
+    "seen": 1794986642.0170996,
+    "ast_hash": "dd44b1c35013d306dc834b6ca2bcf927",
+    "semantic_hash": ""
+  },
+  "app/process-flow.tsx": {
+    "mtime": 1794985188.9804447,
+    "seen": 1794986642.0170996,
+    "ast_hash": "02dc2647731f9d6a403f275e51b7513b",
+    "semantic_hash": ""
+  },
+  "app/showcase.tsx": {
+    "mtime": 1794985208.2599387,
+    "seen": 1794986642.0170996,
+    "ast_hash": "03546e5223e7bc4321bd05aeb99b84e2",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1794984991.5293107,
+    "seen": 1794986642.0170996,
+    "ast_hash": "d241651eaa7ddb4c03d98a6d1eb0ef4d",
+    "semantic_hash": ""
+  },
+  "MENINGES-LABS-SEO-Search-Intent-Playbook-v1.md": {
+    "mtime": 1794204520.1232371,
+    "seen": 1794986642.0170996,
+    "ast_hash": "e7d0db6b3034020f694ee9bf64b5061e",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1794578362.465159,
+    "seen": 1794986642.0170996,
+    "ast_hash": "4e218e6d1ff896cff133a163269c6252",
+    "semantic_hash": ""
+  },
+  "archive/brand-v1/README.md": {
+    "mtime": 1794577770.7031531,
+    "seen": 1794986642.0170996,
+    "ast_hash": "3382e54a40f0da93b46938dcdb7f461c",
+    "semantic_hash": ""
+  },
+  "archive/brand-v1/docs/Meninges-Labs-Brand-Kit-v1.0.md": {
+    "mtime": 1794110093.5468132,
+    "seen": 1794986642.0170996,
+    "ast_hash": "e4d7a884455c0d894ce9bfbf5f1bc9f3",
+    "semantic_hash": ""
+  },
+  "archive/brand-v1/docs/Meninges-Labs-Micro-Animation-Library-100-v1.md": {
+    "mtime": 1794111579.425686,
+    "seen": 1794986642.0170996,
+    "ast_hash": "e4a6131ac44af2e66794c7906bb0d1c2",
+    "semantic_hash": ""
+  },
+  "docs/brand/MENINGES-LABS-Brand-Kit-v2.0.md": {
+    "mtime": 1794571350.6914866,
+    "seen": 1794986642.0170996,
+    "ast_hash": "463f761ae196e8e4398ad5bc8581dc58",
+    "semantic_hash": ""
+  },
+  "docs/brand/MENINGES-LABS-Hybrid-Website-Rebrand-Implementation-Brief-v1.0.md": {
+    "mtime": 1794571148.0675116,
+    "seen": 1794986642.0170996,
+    "ast_hash": "ae6869748deedc5d5df213b187b23b98",
+    "semantic_hash": ""
+  },
+  "docs/brand/MENINGES-LABS-Visual-Experience-Addendum-v1.1.md": {
+    "mtime": 1794571146.6764376,
+    "seen": 1794986642.0170996,
+    "ast_hash": "e3e0fe5d665b4b8885776ad87dc6905b",
+    "semantic_hash": ""
+  },
+  "MeningesLabs Rebrand/Meninges Labs Named logo.png": {
+    "mtime": 1794567810.627957,
+    "seen": 1794986642.0170996,
+    "ast_hash": "1ba1e16930c8961fe1608a3b214b54d0",
+    "semantic_hash": ""
+  },
+  "MeningesLabs Rebrand/Meninges Labs logo with tagline.png": {
+    "mtime": 1794569053.8369687,
+    "seen": 1794986642.0170996,
+    "ast_hash": "ee285fe71c0d48a60ae028c95d91e824",
+    "semantic_hash": ""
+  },
+  "MeningesLabs Rebrand/MeningesLabs-Icon-MonogramLogo.png": {
+    "mtime": 1794566411.8464775,
+    "seen": 1794986642.0170996,
+    "ast_hash": "0575c6979dadac1e152f08286d035f6e",
+    "semantic_hash": ""
+  },
+  "archive/brand-v1/images/Aakif_founder.jpg": {
+    "mtime": 1794203698.1940846,
+    "seen": 1794986642.0170996,
+    "ast_hash": "da9615662bd43c28ccba53c1060dc2c8",
+    "semantic_hash": ""
+  },
+  "archive/brand-v1/images/meninges-labs-ai-digital-intelligence-agency-logo.webp": {
+    "mtime": 1794129919.6793053,
+    "seen": 1794986642.0170996,
+    "ast_hash": "485a7b376a7a2da67b9a299720f75e24",
+    "semantic_hash": ""
+  },
+  "archive/brand-v1/images/meninges-labs-descriptor.webp": {
+    "mtime": 1794111028.0284348,
+    "seen": 1794986642.0170996,
+    "ast_hash": "cc32bbb1d2c97e1587915373bf749c55",
+    "semantic_hash": ""
+  },
+  "archive/brand-v1/images/meninges-labs-digital-growth-intelligence-logo.webp": {
+    "mtime": 1794129978.8996558,
+    "seen": 1794986642.0170996,
+    "ast_hash": "07fffe76d50d5c106659f7d8bbd6e5b3",
+    "semantic_hash": ""
+  },
+  "archive/brand-v1/images/meninges-labs-monogram-logo.png": {
+    "mtime": 1794131967.7861133,
+    "seen": 1794986642.0170996,
+    "ast_hash": "eba15e54ccacf7f2accba17a88254458",
+    "semantic_hash": ""
+  },
+  "archive/brand-v1/images/meninges-labs-primary.webp": {
+    "mtime": 1794111028.1264122,
+    "seen": 1794986642.0170996,
+    "ast_hash": "f06ea6622c0204a72923f04d097ae7f8",
+    "semantic_hash": ""
+  },
+  "archive/brand-v1/logos/meninges-labs-logo-with-descriptor-transparent.png": {
+    "mtime": 1794111028.061758,
+    "seen": 1794986642.0170996,
+    "ast_hash": "7b9b101c28ba10222425e9171ac02cc6",
+    "semantic_hash": ""
+  },
+  "archive/brand-v1/logos/meninges-labs-ml-monogram-transparent.png": {
+    "mtime": 1794111027.8246782,
+    "seen": 1794986642.0170996,
+    "ast_hash": "0b4d7ac29d070cb21fae485527e7ce7a",
+    "semantic_hash": ""
+  },
+  "archive/brand-v1/logos/meninges-labs-primary-logo-transparent.png": {
+    "mtime": 1794111028.1204114,
+    "seen": 1794986642.0170996,
+    "ast_hash": "b8bd377b561f346fc913defab8b6e244",
+    "semantic_hash": ""
+  },
+  "archive/brand-v1/video/meninges-labs-ad-poster.webp": {
+    "mtime": 1794121306.9009168,
+    "seen": 1794986642.0170996,
+    "ast_hash": "d62acaa96b7bdd032e276f92784e03d2",
+    "semantic_hash": ""
+  },
+  "public/apple-touch-icon.png": {
+    "mtime": 1794574683.084,
+    "seen": 1794986642.0170996,
+    "ast_hash": "7c3146e1a7a1b92b89d03cf64a6d6562",
+    "semantic_hash": ""
+  },
+  "public/brand-assets/app-icons/meninges-labs-app-icon-1024x1024.png": {
+    "mtime": 1794574679.491,
+    "seen": 1794986642.0170996,
+    "ast_hash": "fb1c0baf0026f5f26dfeacdbb5e11792",
+    "semantic_hash": ""
+  },
+  "public/brand-assets/app-icons/meninges-labs-app-icon-192x192.png": {
+    "mtime": 1794574682.901,
+    "seen": 1794986642.0170996,
+    "ast_hash": "05415680f2fa5c4ed4e36e98e4da6940",
+    "semantic_hash": ""
+  },
+  "public/brand-assets/app-icons/meninges-labs-app-icon-512x512.png": {
+    "mtime": 1794574682.176,
+    "seen": 1794986642.0170996,
+    "ast_hash": "38f6381e4d06ace9c6cd58c2fef50200",
+    "semantic_hash": ""
+  },
+  "public/brand-assets/logos/meninges-labs-lockup-ink.png": {
+    "mtime": 1794574671.23,
+    "seen": 1794986642.0170996,
+    "ast_hash": "80cb227afc586a147d7fdd03087d67b3",
+    "semantic_hash": ""
+  },
+  "public/brand-assets/logos/meninges-labs-lockup-orange.png": {
+    "mtime": 1794574672.316,
+    "seen": 1794986642.0170996,
+    "ast_hash": "0d2c88a01f0f4011b61f4417da85e439",
+    "semantic_hash": ""
+  },
+  "public/brand-assets/logos/meninges-labs-lockup-tagline-ink.png": {
+    "mtime": 1794574671.414,
+    "seen": 1794986642.0170996,
+    "ast_hash": "6ddfd6890a9510238bd2c6521bd49de5",
+    "semantic_hash": ""
+  },
+  "public/brand-assets/logos/meninges-labs-lockup-tagline-orange.png": {
+    "mtime": 1794574674.911,
+    "seen": 1794986642.0170996,
+    "ast_hash": "c4dba2e04757faf72fc4594141a27f66",
+    "semantic_hash": ""
+  },
+  "public/brand-assets/logos/meninges-labs-lockup-tagline-white.png": {
+    "mtime": 1794574670.561,
+    "seen": 1794986642.0170996,
+    "ast_hash": "6f8b2264daf24c5d4a2c530588dfe11b",
+    "semantic_hash": ""
+  },
+  "public/brand-assets/logos/meninges-labs-lockup-white.png": {
+    "mtime": 1794574670.356,
+    "seen": 1794986642.0170996,
+    "ast_hash": "8db8ba253be4879a3a35c5a5ed3e72d8",
+    "semantic_hash": ""
+  },
+  "public/brand-assets/logos/meninges-labs-monogram-ink.png": {
+    "mtime": 1794574671.721,
+    "seen": 1794986642.0170996,
+    "ast_hash": "b55f2adc91714c1cff2264f6df452f98",
+    "semantic_hash": ""
+  },
+  "public/brand-assets/logos/meninges-labs-monogram-orange.png": {
+    "mtime": 1794574672.019,
+    "seen": 1794986642.0170996,
+    "ast_hash": "8abe74243a2d76883289dfdc8e057289",
+    "semantic_hash": ""
+  },
+  "public/brand-assets/logos/meninges-labs-monogram-square-orange.png": {
+    "mtime": 1794574676.887,
+    "seen": 1794986642.0170996,
+    "ast_hash": "12c7caaed21c1f5e1f5c6efa68b6c1d2",
+    "semantic_hash": ""
+  },
+  "public/brand-assets/logos/meninges-labs-monogram-white.png": {
+    "mtime": 1794574670.969,
+    "seen": 1794986642.0170996,
+    "ast_hash": "95dbcc678789867e347b1693ec59073b",
+    "semantic_hash": ""
+  },
+  "public/brand-assets/photography/aakif-founder-meninges-labs-portrait.jpg": {
+    "mtime": 1794203698.1940846,
+    "seen": 1794986642.0170996,
+    "ast_hash": "da9615662bd43c28ccba53c1060dc2c8",
+    "semantic_hash": ""
+  },
+  "public/brand-assets/social/meninges-labs-avatar-1200x1200.png": {
+    "mtime": 1794574689.307,
+    "seen": 1794986642.0170996,
+    "ast_hash": "dc1b6fb553b57ff2f1adaf46da641035",
+    "semantic_hash": ""
+  },
+  "public/brand-assets/social/meninges-labs-social-preview-1200x630.png": {
+    "mtime": 1794574688.227,
+    "seen": 1794986642.0170996,
+    "ast_hash": "812dd6bbc2e0ab7b965dafe02735443d",
+    "semantic_hash": ""
+  },
+  "public/brand/meninges-labs-brand-film-poster.webp": {
+    "mtime": 1794575006.3451157,
+    "seen": 1794986642.0170996,
+    "ast_hash": "574c468a0a9fddc5ec72ebb7e2d85d08",
+    "semantic_hash": ""
+  },
+  "public/icon-1024.png": {
+    "mtime": 1794574683.344,
+    "seen": 1794986642.0170996,
+    "ast_hash": "fb1c0baf0026f5f26dfeacdbb5e11792",
+    "semantic_hash": ""
+  },
+  "public/icon-192.png": {
+    "mtime": 1794574686.893,
+    "seen": 1794986642.0170996,
+    "ast_hash": "05415680f2fa5c4ed4e36e98e4da6940",
+    "semantic_hash": ""
+  },
+  "public/icon-512.png": {
+    "mtime": 1794574686.132,
+    "seen": 1794986642.0170996,
+    "ast_hash": "38f6381e4d06ace9c6cd58c2fef50200",
+    "semantic_hash": ""
+  },
+  "public/images/meninges-labs-ai-agency-social-preview.png": {
+    "mtime": 1794574688.813,
+    "seen": 1794986642.0170996,
+    "ast_hash": "812dd6bbc2e0ab7b965dafe02735443d",
+    "semantic_hash": ""
+  },
+  "public/images/meninges-labs-favicon.png": {
+    "mtime": 1794574686.978,
+    "seen": 1794986642.0170996,
+    "ast_hash": "9275b4ccde71b20369278d541e226b1a",
+    "semantic_hash": ""
+  },
+  "package-lock.json": {
+    "mtime": 1794575647.410694,
+    "seen": 1794986642.0170996,
+    "ast_hash": "5407be19ac169e22edf453e025db120d",
+    "semantic_hash": ""
+  }
+}
