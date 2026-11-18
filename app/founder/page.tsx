@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import FluxLines from "../flux-lines";
+import FAQSection from "../faq-section";
+import Reveal from "../reveal";
+import { ClosingCTA, PageHero, SectionHead, Statement } from "../ui";
+import { Icon } from "../icons";
 
 const pageUrl = "https://meningeslabs.com/founder";
 const shareImage = "/images/meninges-labs-ai-agency-social-preview.png";
 const portrait = "/brand-assets/photography/aakif-founder-meninges-labs-portrait.jpg";
-const pageDescription = "Meet Aakif, founder and AI product developer at MENINGES LABS. A founder's note on software products, applied AI, automation and building practical digital systems.";
+const pageDescription =
+  "Meet Aakif, founder and AI product developer at MENINGES LABS. A founder’s note on software products, applied AI, automation and building practical digital systems.";
 
 export const metadata: Metadata = {
   title: { absolute: "Aakif — Founder & AI Product Developer | MENINGES LABS" },
@@ -19,17 +23,70 @@ export const metadata: Metadata = {
     title: "Aakif — Founder & AI Product Developer | MENINGES LABS",
     description: pageDescription,
     url: pageUrl,
-    images: [{ url: shareImage, width: 1200, height: 630, type: "image/png", alt: "MENINGES LABS social preview — AI-powered digital and intelligence agency" }],
+    images: [{ url: shareImage, width: 1200, height: 630, alt: "MENINGES LABS — digital engineering and growth partner" }],
   },
   twitter: { card: "summary_large_image", title: "Aakif — Founder & AI Product Developer | MENINGES LABS", description: pageDescription, images: [shareImage] },
 };
 
 const focusAreas = [
-  { title: "Software products", body: "Designing and building SaaS platforms, portals and applications with a defined job to do." },
-  { title: "Applied AI", body: "Configuring assistants and agents around approved information, clear limits and human escalation." },
-  { title: "Intelligent automation", body: "Connecting enquiries, CRM, scheduling and follow-ups into workflows a team can trust." },
-  { title: "Connected systems", body: "Bringing engineering, search, acquisition and measurement into one coherent structure." },
+  {
+    title: "Software products",
+    body: "Designing and building SaaS platforms, portals and applications with a defined job to do — and a scope the team can operate after launch.",
+    icon: "code" as const,
+  },
+  {
+    title: "Applied AI",
+    body: "Configuring assistants and agents around approved information, clear limits and an escalation path that keeps a person in control.",
+    icon: "sparkles" as const,
+  },
+  {
+    title: "Intelligent automation",
+    body: "Connecting enquiries, CRM, scheduling and follow-ups into workflows a team can trust, with the repetitive parts handled consistently.",
+    icon: "workflow" as const,
+  },
+  {
+    title: "Connected systems",
+    body: "Bringing engineering, search, acquisition, conversion and measurement into one coherent structure rather than a stack of disconnected tools.",
+    icon: "layers" as const,
+  },
 ];
+
+const notes = [
+  "Businesses rarely need more disconnected tools. They need the pieces to work together.",
+  "A website that explains the business clearly. A search foundation that helps the right people find it. An automation that gives a team time back without taking away control. These are different disciplines, but they serve the same outcome: a business that is easier to find, easier to choose and easier to run.",
+  "Not every problem needs AI. Not every business needs every capability. The work should begin with the constraint and end with something that can be operated, measured and improved.",
+  "That is the standard I want MENINGES LABS held to: thoughtful engineering, honest scope and digital systems that earn their place.",
+];
+
+function FounderVisual() {
+  return (
+    <div className="pv pv-founder">
+      <figure className="founder-portrait-card">
+        <Image
+          src={portrait}
+          alt="Aakif, founder and AI product developer at MENINGES LABS"
+          width={480}
+          height={640}
+          sizes="(max-width: 880px) 84vw, 420px"
+          priority
+        />
+        <figcaption>
+          <b>Aakif</b>
+          <span>Founder &amp; AI Product Developer</span>
+        </figcaption>
+      </figure>
+      <span className="founder-chip founder-chip-a">
+        <Icon name="code" size={15} /> Software products
+      </span>
+      <span className="founder-chip founder-chip-b">
+        <Icon name="sparkles" size={15} /> Applied AI
+      </span>
+      <span className="founder-chip founder-chip-c">
+        <Icon name="workflow" size={15} /> Automation
+      </span>
+    </div>
+  );
+}
 
 export default function FounderPage() {
   const schema = [
@@ -43,7 +100,13 @@ export default function FounderPage() {
       isPartOf: { "@id": "https://meningeslabs.com/#website" },
       about: { "@id": "https://meningeslabs.com/#organization" },
       mainEntity: { "@id": "https://meningeslabs.com/#aakif" },
-      primaryImageOfPage: { "@type": "ImageObject", url: `https://meningeslabs.com${portrait}`, width: 480, height: 640, caption: "Aakif, founder and AI product developer at MENINGES LABS" },
+      primaryImageOfPage: {
+        "@type": "ImageObject",
+        url: `https://meningeslabs.com${portrait}`,
+        width: 480,
+        height: 640,
+        caption: "Aakif, founder and AI product developer at MENINGES LABS",
+      },
     },
     {
       "@context": "https://schema.org",
@@ -54,8 +117,15 @@ export default function FounderPage() {
       worksFor: { "@id": "https://meningeslabs.com/#organization" },
       url: "https://shaikaakif.com",
       sameAs: ["https://shaikaakif.com"],
-      image: { "@type": "ImageObject", url: `https://meningeslabs.com${portrait}`, width: 480, height: 640, caption: "Aakif, founder and AI product developer at MENINGES LABS" },
-      description: "Aakif is the founder and AI product developer at MENINGES LABS, working across software products, applied AI and practical digital automation.",
+      image: {
+        "@type": "ImageObject",
+        url: `https://meningeslabs.com${portrait}`,
+        width: 480,
+        height: 640,
+        caption: "Aakif, founder and AI product developer at MENINGES LABS",
+      },
+      description:
+        "Aakif is the founder and AI product developer at MENINGES LABS, working across software products, applied AI and practical digital automation.",
     },
     {
       "@context": "https://schema.org",
@@ -71,70 +141,128 @@ export default function FounderPage() {
     <main id="main">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      <section className="founder-hero">
-        <FluxLines className="founder-flux" colors={["#780000", "#C1121F", "#669BBC"]} speed={0.28} scale={1.5} turbulence={0.9} fluidity={0.1} rimWidth={0.2} sharpness={2.6} shimmer={0.7} glow={0.7} lineWidth={0.8} flowDirection="down" mouseInteraction mouseStrength={0.5} mouseRadius={0.3} mouseDampening={0.18} lightMode transparent opacity={0.42} />
-        <div className="founder-copy">
-          <p className="eyebrow reveal">The Founder&rsquo;s Desk</p>
-          <h1 className="display reveal delay">Aakif</h1>
-          <p className="founder-role reveal delay">Founder &amp; AI Product Developer<br/><span>MENINGES LABS</span></p>
-          <p className="intro reveal delay">Aakif works at the intersection of software products, applied AI and automation. He founded MENINGES LABS to build digital systems that are useful in practice — not technology for its own sake.</p>
-          <a className="portfolio-cta" href="https://shaikaakif.com" target="_blank" rel="noopener noreferrer">Explore My Portfolio <span aria-hidden="true">→</span></a>
+      <PageHero
+        eyebrow="The Founder's Desk"
+        title="A founder’s hands<br/>on the <em>system.</em>"
+        intro="Aakif works at the intersection of software products, applied AI and automation. He founded MENINGES LABS to build digital systems that are useful in practice — not technology for its own sake."
+        visual={<FounderVisual />}
+        meta={["Founder & AI Product Developer", "MENINGES LABS · Hyderabad, India"]}
+      >
+        <div className="hero-actions">
+          <a className="btn btn-dark" href="https://shaikaakif.com" target="_blank" rel="noopener noreferrer">
+            Explore the portfolio <Icon name="arrow-up-right" size={17} />
+          </a>
+          <Link className="btn btn-outline" href="/about">
+            About the practice <Icon name="arrow-right" size={17} />
+          </Link>
         </div>
-        <figure className="founder-portrait">
-          <Image src={portrait} alt="Aakif, founder and AI product developer at MENINGES LABS, seated in a portrait photograph" width={480} height={640} sizes="(max-width: 680px) 86vw, (max-width: 1100px) 40vw, 420px" priority />
-          <figcaption>Aakif · Founder &amp; AI Product Developer, MENINGES LABS</figcaption>
-        </figure>
-      </section>
+      </PageHero>
 
-      <section className="content-section">
-        <div className="section-inner">
-          <p className="eyebrow">A founder&rsquo;s note</p>
-          <div>
-            <h2 className="display section-title">The useful question<br/>is always <em>why.</em></h2>
+      <section className="section founder-note-section">
+        <div className="wrap editorial-grid">
+          <div className="editorial-aside">
+            <span className="editorial-number">01</span>
+            <p className="eyebrow">
+              <span className="eyebrow-dot" aria-hidden="true" />
+              A founder&rsquo;s note
+            </p>
+          </div>
+          <div className="editorial-body">
+            <h2 className="display section-title">
+              The useful question
+              <br />
+              is always <em>why.</em>
+            </h2>
+            <p className="lead founder-lede">
+              I built MENINGES LABS around a simple observation: businesses rarely need more disconnected tools.
+              They need the pieces to work together.
+            </p>
+            <div className="founder-note">
+              {notes.slice(1).map((note) => (
+                <p key={note}>{note}</p>
+              ))}
+              <p className="founder-signature">— Aakif</p>
+            </div>
           </div>
         </div>
-        <div className="founder-note">
-          <p>I built MENINGES LABS around a simple observation: businesses rarely need more disconnected tools. They need the pieces to work together.</p>
-          <p>Most of my time goes into software products, applied AI and automation — the layers where a well-designed system can remove real friction. A website that explains a business clearly. A search foundation that helps the right people find it. An automation that gives a team time back without taking away control. These are different disciplines, but they serve the same outcome: a business that is easier to find, easier to choose and easier to run.</p>
-          <p>I am interested in the point where engineering meets usefulness. Not every problem needs AI. Not every business needs every capability. The work should begin with the constraint and end with something that can be operated, measured and improved.</p>
-          <p>That is the standard I want MENINGES LABS held to: thoughtful engineering, honest scope and digital systems that earn their place.</p>
-          <p className="founder-signature">— Aakif</p>
-        </div>
       </section>
 
-      <section className="content-section surface">
-        <div className="section-inner">
-          <p className="eyebrow">Where I focus</p>
+      <Reveal>
+        <section className="section focus-section">
+          <div className="wrap">
+            <SectionHead
+              eyebrow="Where I focus"
+              title="Building the layers<br/>that make growth <em>work.</em>"
+              body="The founder’s desk sits across the same capabilities MENINGES LABS offers to clients. The work changes with the problem; the standard does not."
+            />
+            <div className="problem-grid focus-grid">
+              {focusAreas.map((area, index) => (
+                <article key={area.title}>
+                  <div className="focus-top">
+                    <span>{String(index + 1).padStart(2, "0")}</span>
+                    <span className="deliverable-icon">
+                      <Icon name={area.icon} size={19} />
+                    </span>
+                  </div>
+                  <h3>{area.title}</h3>
+                  <p>{area.body}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      </Reveal>
+
+      <Statement
+        quote="The work should begin with the business problem, not the technology. Everything else follows from that discipline."
+        attribution="Aakif · Founder & AI Product Developer"
+        variant="orange"
+      />
+
+      <section className="section founder-link-section">
+        <div className="wrap founder-link">
           <div>
-            <h2 className="display section-title">Building the layers<br/>that make growth <em>work.</em></h2>
-            <p className="section-copy">The founder&rsquo;s desk sits across the same capabilities that MENINGES LABS offers to clients.</p>
+            <p className="eyebrow">
+              <span className="eyebrow-dot" aria-hidden="true" />
+              Continue the thread
+            </p>
+            <h2 className="display section-title">
+              See the thinking
+              <br />
+              behind the <em>practice.</em>
+            </h2>
+            <p className="section-copy">
+              Read how the capabilities connect, or start with the business problem that brought you here. Either
+              path begins with a useful conversation.
+            </p>
+          </div>
+          <div className="founder-links">
+            <a className="founder-link-row" href="https://shaikaakif.com" target="_blank" rel="noopener noreferrer">
+              <span>Portfolio</span>
+              <small>shaikaakif.com</small>
+              <Icon name="arrow-up-right" size={18} />
+            </a>
+            <Link className="founder-link-row" href="/about">
+              <span>About MENINGES LABS</span>
+              <small>How the practice works</small>
+              <Icon name="arrow-up-right" size={18} />
+            </Link>
+            <Link className="founder-link-row" href="/services">
+              <span>Capabilities</span>
+              <small>Five connected disciplines</small>
+              <Icon name="arrow-up-right" size={18} />
+            </Link>
+            <Link className="founder-link-row" href="/contact">
+              <span>Start a conversation</span>
+              <small>Talk through the actual need</small>
+              <Icon name="arrow-up-right" size={18} />
+            </Link>
           </div>
         </div>
-        <div className="founder-focus-grid">
-          {focusAreas.map((area, index) => (
-            <article key={area.title}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              <h3 className="display">{area.title}</h3>
-              <p>{area.body}</p>
-            </article>
-          ))}
-        </div>
       </section>
 
-      <section className="statement founder-statement">
-        <blockquote>The work should begin with the business problem, not the technology. Everything else follows from that discipline.</blockquote>
-        <span>AAKIF · FOUNDER &amp; AI & PRODUCT DEVELOPER</span>
-      </section>
-
-      <section className="next-step">
-        <div>
-          <p className="eyebrow">A useful next step</p>
-          <h2 className="display">See the work behind<br/>the agency.</h2>
-          <a className="arrow-link" href="https://shaikaakif.com" target="_blank" rel="noopener noreferrer">Explore my portfolio <span>↗</span></a>
-          <Link className="arrow-link" href="/about">About MENINGES LABS <span>↗</span></Link>
-          <Link className="arrow-link" href="/contact">Start a conversation <span>↗</span></Link>
-        </div>
-      </section>
+      <FAQSection groups={["About Meninges Labs"]} limit={5} />
+      <ClosingCTA />
     </main>
   );
 }
